@@ -18,4 +18,7 @@ sudo echo 127.0.0.1 TARGET_URL www.TARGET_URL >> /etc/hosts
 
 # Check it works
 
-curl -vv -k https://TARGET_URL - you should get a certificate error (as you don't have a valid certificate for TARGET_URL) which is ignored by the -k switch, and you can see the responding server is 127.0.0.1
+curl -vv -k https://TARGET_URL - you should get a certificate error (as you don't have a valid certificate for TARGET_URL) which is ignored by the -k switch, and you can see the responding server is 127.0.0.1  
+# Credits
+
+wsgi_proxy.py heavily derived from https://bitbucket.org/dahlia/wsgi-proxy
